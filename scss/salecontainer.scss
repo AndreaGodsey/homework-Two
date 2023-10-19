@@ -1,0 +1,54 @@
+.salecontainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 400px;
+    background-color: darkcyan;
+    width: 100%;
+    .left{
+        height: 380px;
+        .titleofpara{
+            width: 45%;
+            font-size: 30px;
+            color: brown;
+            font-family: Cabin-Regular;
+            margin-top: 40px;
+            margin-left: 10px;
+            background-color: bisque;
+            @font-face {
+                font-family: Cabin-Regular;
+                src: url(../fonts/Cabin/Cabin-VariableFont_wdth\,wght.ttf);
+                
+            }
+        }
+        .subsectiondates{
+            font-size: 15px;
+            color: brown;
+            background-color: bisque;
+            width: 45%;
+            margin-top: 10px;
+            margin-left: 10px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .paragraphsale{
+            font-size: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-left: 10px;
+            margin-top: 33px;
+            width: 65%;
+            color: bisque;
+        }
+    }
+
+    .right{
+        .redsale{
+            background-image: url(../images/Salered.jpg);
+            width: 380px;
+            height: 320px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            margin-right: 15px;
+        }
+    }
+}

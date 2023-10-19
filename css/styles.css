@@ -1,0 +1,461 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+h1 h2 h3 h4 h5 h6 p {
+  margin-bottom: 16px;
+}
+
+.navHolder {
+  position: fixed;
+  left: 10px;
+}
+.navHolder .bars .bar {
+  display: block;
+  width: 25px;
+  margin: 5px 0;
+  background-color: #000;
+  height: 3px;
+  border-radius: 5px;
+}
+.navHolder .bars .bar {
+  display: block;
+  width: 25px;
+  margin: 5px 0;
+  background-color: #000;
+  height: 3px;
+  border-radius: 5px;
+}
+.navHolder .bars .bar {
+  display: block;
+  width: 25px;
+  margin: 5px 0;
+  background-color: #000;
+  height: 3px;
+  border-radius: 5px;
+}
+.navHolder .bars {
+  display: none;
+}
+.navHolder .bars.active .bar:nth-child(1) {
+  opacity: 0;
+}
+.navHolder .bars.active .bar:nth-child(2) {
+  -webkit-transform: translateY(2px) rotate(45deg);
+          transform: translateY(2px) rotate(45deg);
+}
+.navHolder .bars.active .bar:nth-child(3) {
+  -webkit-transform: translateY(-6px) rotate(-45deg);
+          transform: translateY(-6px) rotate(-45deg);
+}
+.navHolder .bars .bar {
+  display: block;
+  width: 25px;
+  margin: 5px 0;
+  background-color: #000;
+  height: 3px;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.navHolder .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: darkcyan;
+  height: 50px;
+  width: 100vw;
+  margin-left: -10px;
+  overflow: hidden;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-transition: height 0.4s, opacity 0.2s ease-in;
+  transition: height 0.4s, opacity 0.2s ease-in;
+  font-family: Cabin-Italic;
+  font-size: 25px;
+}
+.navHolder .links .linkname {
+  text-decoration: none;
+  color: bisque;
+}
+.navHolder .links.active {
+  height: 100vh;
+  opacity: 1;
+}
+@font-face {
+  font-family: Cabin-Italic;
+  src: url(../fonts/Cabin/Cabin-Italic-VariableFont_wdth\,wght.ttf);
+}
+
+@media screen and (max-width: 960px) {
+  .navHolder .bars {
+    display: block;
+  }
+  .navHolder .links {
+    height: 0;
+    opacity: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navHolder .links .linkname {
+    text-decoration: none;
+    color: bisque;
+  }
+}
+.shoead {
+  padding-top: 50px;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(90, 90, 90, 0.5)), to(rgba(90, 90, 90, 0.5))), url(../images/shoead.jpg);
+  background-image: linear-gradient(to right, rgba(90, 90, 90, 0.5), rgba(90, 90, 90, 0.5)), url(../images/shoead.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+}
+.shoead .callout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.shoead .callout .quote {
+  padding-left: 230px;
+  width: 95%;
+  margin-top: 110px;
+  font-size: 75px;
+  font-family: Cabin-Italic;
+  color: bisque;
+}
+@font-face {
+  font-family: Cabin-Italic;
+  src: url(../fonts/Cabin/Cabin-Italic-VariableFont_wdth\,wght.ttf);
+}
+
+.divide {
+  width: 100%;
+  height: 30px;
+  color: white;
+}
+
+.titleofsectionhome {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100px;
+  width: 100%;
+  font-size: 50px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: darkcyan;
+  color: bisque;
+}
+
+.containershoesimages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.containershoesimages .shoeone {
+  background-image: url(../images/shoeone.jpg);
+  width: 490px;
+  height: 450px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.containershoesimages .shoeone .overlay {
+  width: 490px;
+  height: 450px;
+  background-color: rgba(0, 0, 0, 0.68);
+  position: absolute;
+  top: 0;
+  display: none;
+}
+.containershoesimages .shoeone .overlay .textgroup {
+  margin-top: 210px;
+  margin-right: 10px;
+}
+.containershoesimages .shoeone .overlay .overtext {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: Cabin-Regular;
+  font-size: 30px;
+}
+.containershoesimages .shoeone .overlay .overtext2 {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 25px;
+}
+.containershoesimages .shoetwo {
+  background-image: url(../images/shoetwo.jpg);
+  width: 490px;
+  height: 450px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.containershoesimages .shoetwo .overlay {
+  width: 490px;
+  height: 450px;
+  background-color: rgba(0, 0, 0, 0.68);
+  position: absolute;
+  top: 0;
+  display: none;
+}
+.containershoesimages .shoetwo .overlay .textgroup {
+  margin-top: 210px;
+  margin-right: 10px;
+}
+.containershoesimages .shoetwo .overlay .overtext {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: Cabin-Regular;
+  font-size: 30px;
+}
+.containershoesimages .shoetwo .overlay .overtext2 {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 25px;
+}
+.containershoesimages .shoethree {
+  background-image: url(../images/shoethree.jpg);
+  width: 490px;
+  height: 450px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.containershoesimages .shoethree .overlay {
+  width: 490px;
+  height: 450px;
+  background-color: rgba(0, 0, 0, 0.68);
+  position: absolute;
+  top: 0;
+  display: none;
+}
+.containershoesimages .shoethree .overlay .textgroup {
+  margin-top: 210px;
+  margin-right: 10px;
+}
+.containershoesimages .shoethree .overlay .overtext {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: Cabin-Regular;
+  font-size: 30px;
+}
+@font-face {
+  font-family: Cabin-Regular;
+  src: url(../fonts/Cabin/Cabin-VariableFont_wdth\,wght.ttf);
+}
+.containershoesimages .shoethree .overlay .overtext2 {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 25px;
+}
+.containershoesimages .shoeone:hover > .overlay {
+  display: block;
+}
+.containershoesimages .shoetwo:hover > .overlay {
+  display: block;
+}
+.containershoesimages .shoethree:hover > .overlay {
+  display: block;
+}
+
+@media screen and (max-width: 800px) {
+  .containershoesimages {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 12px;
+  }
+}
+.salecontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 400px;
+  background-color: darkcyan;
+  width: 100%;
+}
+.salecontainer .left {
+  height: 380px;
+}
+.salecontainer .left .titleofpara {
+  width: 45%;
+  font-size: 30px;
+  color: brown;
+  font-family: Cabin-Regular;
+  margin-top: 40px;
+  margin-left: 10px;
+  background-color: bisque;
+}
+@font-face {
+  font-family: Cabin-Regular;
+  src: url(../fonts/Cabin/Cabin-VariableFont_wdth\,wght.ttf);
+}
+.salecontainer .left .subsectiondates {
+  font-size: 15px;
+  color: brown;
+  background-color: bisque;
+  width: 45%;
+  margin-top: 10px;
+  margin-left: 10px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.salecontainer .left .paragraphsale {
+  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-left: 10px;
+  margin-top: 33px;
+  width: 65%;
+  color: bisque;
+}
+.salecontainer .right .redsale {
+  background-image: url(../images/Salered.jpg);
+  width: 380px;
+  height: 320px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-right: 15px;
+}
+
+.donateyourshoes {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(90, 90, 90, 0.5)), to(rgba(90, 90, 90, 0.5))), url(../images/recycleshoes.jpg);
+  background-image: linear-gradient(to right, rgba(90, 90, 90, 0.5), rgba(90, 90, 90, 0.5)), url(../images/recycleshoes.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+}
+.donateyourshoes .callout2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.donateyourshoes .callout2 .donateyourshoestitle {
+  text-align: center;
+  width: 100%;
+  margin-top: 150px;
+  font-size: 90px;
+  font-family: Cabin-Regular;
+  color: bisque;
+}
+@font-face {
+  font-family: Cabin-Regular;
+  src: url(../fonts/Cabin/Cabin-VariableFont_wdth\,wght.ttf);
+}
+.donateyourshoes .callout2 .explorebutton {
+  padding: 5px 20px;
+  border-radius: 20px;
+  background-color: darkcyan;
+  color: bisque;
+  border: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  width: 220px;
+  height: 40px;
+  margin-right: 10px;
+  margin-top: 50px;
+  font-size: 23px;
+  text-align: center;
+}

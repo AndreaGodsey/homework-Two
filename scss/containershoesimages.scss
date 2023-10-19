@@ -1,0 +1,154 @@
+.containershoesimages{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        .shoeone{
+            background-image: url(../images/shoeone.jpg);
+            width: 490px;
+            height: 450px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        .overlay{
+            width: 490px;
+            height: 450px;
+            background-color: rgba(0, 0, 0, 0.68);
+            position: absolute;
+            top: 0;
+            display: none;
+    
+        .textgroup{
+            margin-top: 210px;
+            margin-right: 10px;
+        }
+        .overtext {
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Cabin-Regular;
+            font-size: 30px;
+        }
+        .overtext2{
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 25px;
+        
+     }
+        
+    
+    
+    }
+        }
+    
+        .shoetwo{
+            background-image: url(../images/shoetwo.jpg);
+            width: 490px;
+            height: 450px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            .overlay{
+                width: 490px;
+                height: 450px;
+                background-color: rgba(0, 0, 0, 0.68);
+                position: absolute;
+                top: 0;
+                display: none;
+        
+            .textgroup{
+                margin-top: 210px;
+                margin-right: 10px;
+            }
+            .overtext {
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: Cabin-Regular;
+                font-size: 30px;
+            }
+            .overtext2{
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-size: 25px;
+            
+         }
+            
+        
+        
+        }
+        }
+    
+        
+        .shoethree{
+            background-image: url(../images/shoethree.jpg);
+            width: 490px;
+            height: 450px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            .overlay{
+                width: 490px;
+                height: 450px;
+                background-color: rgba(0, 0, 0, 0.68);
+                position: absolute;
+                top: 0;
+                display: none;
+        
+            .textgroup{
+                margin-top: 210px;
+                margin-right: 10px;
+            }
+            .overtext {
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: Cabin-Regular;
+                font-size: 30px;
+                @font-face {
+                    font-family: Cabin-Regular;
+                    src: url(../fonts/Cabin/Cabin-VariableFont_wdth\,wght.ttf);
+                }
+            }
+            .overtext2{
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-size: 25px;
+         }
+            
+        
+        
+        }
+        }
+    .shoeone:hover > .overlay{
+        display: block;
+    }
+    .shoetwo:hover >.overlay{
+        display: block;
+    }
+    .shoethree:hover > .overlay{
+        display: block;
+    }
+    }
+    
+    @media screen and (max-width: 800px) {
+        .containershoesimages {
+            flex-direction: column;
+            padding: 12px;
+        }
+      }

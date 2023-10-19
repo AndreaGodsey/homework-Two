@@ -1,0 +1,27 @@
+.shoead{
+    padding-top: 50px;
+    background-image:linear-gradient(to right, rgba(90, 90, 90,.50),rgba(90, 90, 90,.50)),url(../images/shoead.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+
+    .callout{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .quote{
+        padding-left: 230px;
+        width: 95%;
+        margin-top: 110px;
+        font-size: 75px;
+        font-family: Cabin-Italic;
+        color: bisque;
+        @font-face {
+            font-family: Cabin-Italic;
+            src: url(../fonts/Cabin/Cabin-Italic-VariableFont_wdth\,wght.ttf);
+        }
+        }
+    }
+}
