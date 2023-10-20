@@ -1,6 +1,12 @@
+import { changePageContent } from "../model/model.js";
+
+ 
+
+
 function changeRoute() {
     let hashTag = window.location.hash;
-    let pageID = hashTag.replace("#", "")
+    let pageID = hashTag.replace("#", "");
+    changePageContent(pageID);
     // console.log(hashTag + " " + pageID);
 
     if(pageID != ""){

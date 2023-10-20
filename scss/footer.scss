@@ -1,0 +1,54 @@
+.footerbox{
+    height: 100px;
+    width: 100%;
+    background-color: darkcyan;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    
+    .logo-below{
+        width: 150px;
+        height: 43px;
+        // background-color: chocolate;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: bisque;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid bisque;
+        font-size: 20px;
+     }
+    .copyright{
+        color: bisque;
+        font-size: 12px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .group-social-media{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        .social-media-icons1{
+            color: bisque;
+            padding: 12px;
+            }
+    
+        .social-media-icons2{
+            color: bisque;
+            padding: 12px;
+        }
+    
+        .social-media-icons3{
+            color: bisque;
+            padding: 12px;
+        }
+    }
+
+}
+
+@media screen and (max-width: 960px) {
+    .footerbox {
+      max-width: 960px;
+    }
+  }

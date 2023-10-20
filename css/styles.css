@@ -16,6 +16,7 @@ h1 h2 h3 h4 h5 h6 p {
 .navHolder {
   position: fixed;
   left: 10px;
+  z-index: 10;
 }
 .navHolder .bars .bar {
   display: block;
@@ -64,6 +65,34 @@ h1 h2 h3 h4 h5 h6 p {
   border-radius: 5px;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+}
+.navHolder .logo {
+  font-size: 25px;
+  color: bisque;
+  background-color: darkcyan;
+  margin-left: -10px;
+  font-family: Cabin-Italic;
+  border: 2px solid bisque;
+  width: 150px;
+  height: 43px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.navHolder .desk {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 25px;
+}
+.navHolder .mobile {
+  display: none;
 }
 .navHolder .links {
   display: -webkit-box;
@@ -115,6 +144,33 @@ h1 h2 h3 h4 h5 h6 p {
     color: bisque;
   }
 }
+@media screen and (max-width: 960px) {
+  .navHolder .bars {
+    display: block;
+  }
+  .navHolder .links {
+    height: 0;
+    opacity: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navHolder .links .linkname {
+    text-decoration: none;
+    color: bisque;
+  }
+}
+@media screen and (max-width: 960px) {
+  .desk {
+    display: none !important;
+  }
+  .mobile {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+}
 .shoead {
   padding-top: 50px;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(90, 90, 90, 0.5)), to(rgba(90, 90, 90, 0.5))), url(../images/shoead.jpg);
@@ -149,10 +205,16 @@ h1 h2 h3 h4 h5 h6 p {
   src: url(../fonts/Cabin/Cabin-Italic-VariableFont_wdth\,wght.ttf);
 }
 
+@media screen and (max-width: 960px) {
+  .shoead .callout .quote {
+    font-size: 60px;
+    margin-left: -200px;
+  }
+}
 .divide {
-  width: 100%;
+  color: darkcyan;
   height: 30px;
-  color: white;
+  width: 100%;
 }
 
 .titleofsectionhome {
@@ -183,6 +245,7 @@ h1 h2 h3 h4 h5 h6 p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 1;
 }
 .containershoesimages .shoeone {
   background-image: url(../images/shoeone.jpg);
@@ -345,13 +408,34 @@ h1 h2 h3 h4 h5 h6 p {
   display: block;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 960px) {
   .containershoesimages {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     padding: 12px;
+  }
+  .containershoesimages .shoeone {
+    height: 600px;
+  }
+  .containershoesimages .shoetwo {
+    height: 600px;
+  }
+  .containershoesimages .shoethree {
+    height: 600px;
+  }
+  .containershoesimages .shoeone:hover > .overlay {
+    display: block;
+    height: 600px;
+  }
+  .containershoesimages .shoetwo:hover > .overlay {
+    display: block;
+    height: 600px;
+  }
+  .containershoesimages .shoethree:hover > .overlay {
+    display: block;
+    height: 600px;
   }
 }
 .salecontainer {
@@ -410,6 +494,17 @@ h1 h2 h3 h4 h5 h6 p {
   margin-right: 15px;
 }
 
+@media screen and (max-width: 960px) {
+  .salecontainer {
+    height: 600px;
+  }
+  .salecontainer .left {
+    height: 600px;
+  }
+  .salecontainer .right .redsale {
+    height: 540px;
+  }
+}
 .donateyourshoes {
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(90, 90, 90, 0.5)), to(rgba(90, 90, 90, 0.5))), url(../images/recycleshoes.jpg);
   background-image: linear-gradient(to right, rgba(90, 90, 90, 0.5), rgba(90, 90, 90, 0.5)), url(../images/recycleshoes.jpg);
@@ -445,6 +540,13 @@ h1 h2 h3 h4 h5 h6 p {
   font-family: Cabin-Regular;
   src: url(../fonts/Cabin/Cabin-VariableFont_wdth\,wght.ttf);
 }
+.donateyourshoes .callout2 .donateshoesinfo {
+  font-size: 25px;
+  width: 85%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+  color: bisque;
+}
 .donateyourshoes .callout2 .explorebutton {
   padding: 5px 20px;
   border-radius: 20px;
@@ -458,4 +560,702 @@ h1 h2 h3 h4 h5 h6 p {
   margin-top: 50px;
   font-size: 23px;
   text-align: center;
+}
+
+@media screen and (max-width: 960px) {
+  .donateyourshoes {
+    height: 600px;
+  }
+}
+.footerbox {
+  height: 100px;
+  width: 100%;
+  background-color: darkcyan;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.footerbox .logo-below {
+  width: 150px;
+  height: 43px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: bisque;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 2px solid bisque;
+  font-size: 20px;
+}
+.footerbox .copyright {
+  color: bisque;
+  font-size: 12px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.footerbox .group-social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.footerbox .group-social-media .social-media-icons1 {
+  color: bisque;
+  padding: 12px;
+}
+.footerbox .group-social-media .social-media-icons2 {
+  color: bisque;
+  padding: 12px;
+}
+.footerbox .group-social-media .social-media-icons3 {
+  color: bisque;
+  padding: 12px;
+}
+
+@media screen and (max-width: 960px) {
+  .footerbox {
+    max-width: 960px;
+  }
+}
+.browsecontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 60px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 93%;
+  padding-top: 50px;
+  padding-left: 15%;
+  height: 320px;
+}
+.browsecontainer .containerthree {
+  width: 50%;
+  max-width: 960px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.browsecontainer .containerthree .leftone .shoespics {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  background-image: url(../images/blackboots.jpg);
+}
+.browsecontainer .rightone {
+  width: 150px;
+  height: 200px;
+}
+.browsecontainer .rightone .titleofpara {
+  padding-left: 10px;
+  font-size: 30px;
+  width: 5%;
+  font-family: Cabin-Regular;
+  color: darkcyan;
+}
+.browsecontainer .rightone .paragraphinfo {
+  padding-left: 10px;
+  font-size: 22px;
+  width: 15%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: darkcyan;
+}
+
+.containerfour {
+  width: 50%;
+  max-width: 960px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.containerfour .leftone .shoespicsone {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  background-image: url(../images/beigehighheels.jpg);
+}
+.containerfour .rightone .titleofpara {
+  padding-left: 10px;
+  font-size: 30px;
+  width: 5%;
+  font-family: Cabin-Regular;
+  color: darkcyan;
+}
+.containerfour .rightone .paragraphinfo {
+  padding-left: 10px;
+  font-size: 22px;
+  width: 15%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: darkcyan;
+}
+
+@media screen and (max-width: 960px) {
+  .containerthree {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 960px;
+    padding: 10px;
+  }
+  .containerthree .leftone {
+    width: 8%;
+  }
+}
+@media screen and (max-width: 960px) {
+  .containerfour {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 960px;
+    padding: 10px;
+  }
+  .containerfour .leftone {
+    width: 60%;
+  }
+  .containerfour .rightone .blogimage {
+    max-width: 76%;
+  }
+}
+@media screen and (max-width: 960px) {
+  .browsecontainer {
+    padding-top: 100px;
+    height: 1000px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.browsecontainergrouptwo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 93%;
+  margin-left: 60px;
+  padding-top: 50px;
+  padding-left: 15%;
+  height: 320px;
+}
+.browsecontainergrouptwo .containerthree {
+  width: 50%;
+  max-width: 960px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.browsecontainergrouptwo .containerthree .leftone .shoespics {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  background-image: url(../images/browntallboots.jpg);
+}
+.browsecontainergrouptwo .rightone {
+  width: 150px;
+  height: 200px;
+}
+.browsecontainergrouptwo .rightone .titleofpara {
+  padding-left: 10px;
+  font-size: 30px;
+  width: 5%;
+  font-family: Cabin-Regular;
+  color: darkcyan;
+}
+.browsecontainergrouptwo .rightone .paragraphinfo {
+  padding-left: 10px;
+  font-size: 22px;
+  width: 15%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: darkcyan;
+}
+
+.containerfour {
+  width: 50%;
+  max-width: 960px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.containerfour .leftone .shoespicstwo {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  background-image: url(../images/brownslipons.jpg);
+}
+.containerfour .rightone .titleofpara {
+  padding-left: 10px;
+  font-size: 30px;
+  width: 5%;
+  font-family: Cabin-Regular;
+  color: darkcyan;
+}
+.containerfour .rightone .paragraphinfo {
+  padding-left: 10px;
+  font-size: 22px;
+  width: 15%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: darkcyan;
+}
+
+@media screen and (max-width: 960px) {
+  .containerthree {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 960px;
+    padding: 10px;
+  }
+  .containerthree .leftone {
+    width: 8%;
+  }
+  .containerthree .rightone .blogimage {
+    max-width: 76%;
+  }
+}
+@media screen and (max-width: 960px) {
+  .containerfour {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 960px;
+    padding: 10px;
+  }
+  .containerfour .leftone {
+    width: 60%;
+  }
+  .containerfour .rightone .blogimage {
+    max-width: 76%;
+  }
+}
+@media screen and (max-width: 960px) {
+  .browsecontainergrouptwo {
+    padding-top: 100px;
+    height: 1000px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.browsecontainergroupthree {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 93%;
+  margin-left: 60px;
+  padding-top: 50px;
+  padding-left: 15%;
+  height: 320px;
+}
+.browsecontainergroupthree .containerthree {
+  width: 50%;
+  max-width: 960px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.browsecontainergroupthree .containerthree .leftone .shoespics {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  background-image: url(../images/sequinhighheels.jpg);
+}
+.browsecontainergroupthree .rightone {
+  width: 150px;
+  height: 200px;
+}
+.browsecontainergroupthree .rightone .titleofpara {
+  padding-left: 10px;
+  font-size: 30px;
+  width: 5%;
+  font-family: Cabin-Regular;
+  color: darkcyan;
+}
+.browsecontainergroupthree .rightone .paragraphinfo {
+  padding-left: 10px;
+  font-size: 22px;
+  width: 15%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: darkcyan;
+}
+
+.containerfour {
+  width: 50%;
+  max-width: 960px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.containerfour .leftone .shoespicsthree {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  background-image: url(../images/speckledtennisshoes.jpg);
+}
+.containerfour .rightone .titleofpara {
+  padding-left: 10px;
+  font-size: 30px;
+  width: 5%;
+  font-family: Cabin-Regular;
+  color: darkcyan;
+}
+.containerfour .rightone .paragraphinfo {
+  padding-left: 10px;
+  font-size: 22px;
+  width: 15%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: darkcyan;
+}
+
+@media screen and (max-width: 960px) {
+  .containerthree {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 960px;
+    padding: 10px;
+  }
+  .containerthree .leftone {
+    width: 8%;
+  }
+  .containerthree .rightone .blogimage {
+    max-width: 76%;
+  }
+}
+@media screen and (max-width: 960px) {
+  .containerfour {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 960px;
+    padding: 10px;
+  }
+  .containerfour .leftone {
+    width: 60%;
+  }
+  .containerfour .rightone .blogimage {
+    max-width: 76%;
+  }
+}
+@media screen and (max-width: 960px) {
+  .browsecontainergroupthree {
+    padding-top: 100px;
+    height: 1000px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.browsecontainergroupfour {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-left: 60px;
+  width: 93%;
+  padding-top: 50px;
+  padding-left: 15%;
+  height: 320px;
+}
+.browsecontainergroupfour .containerthree {
+  width: 50%;
+  max-width: 960px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.browsecontainergroupfour .containerthree .leftone .shoespics {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  background-image: url(../images/sandalsgray.jpg);
+}
+.browsecontainergroupfour .rightone {
+  width: 150px;
+  height: 200px;
+}
+.browsecontainergroupfour .rightone .titleofpara {
+  padding-left: 10px;
+  font-size: 30px;
+  width: 5%;
+  font-family: Cabin-Regular;
+  color: darkcyan;
+}
+.browsecontainergroupfour .rightone .paragraphinfo {
+  padding-left: 10px;
+  font-size: 22px;
+  width: 15%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: darkcyan;
+}
+
+.containerfour {
+  width: 50%;
+  max-width: 960px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.containerfour .leftone .shoespicsfour {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  background-image: url(../images/blackslipons.jpg);
+}
+.containerfour .rightone .titleofpara {
+  padding-left: 10px;
+  font-size: 30px;
+  width: 5%;
+  font-family: Cabin-Regular;
+  color: darkcyan;
+}
+.containerfour .rightone .paragraphinfo {
+  padding-left: 10px;
+  font-size: 22px;
+  width: 15%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: darkcyan;
+}
+
+@media screen and (max-width: 960px) {
+  .containerthree {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 960px;
+    padding: 10px;
+  }
+  .containerthree .leftone {
+    width: 8%;
+  }
+  .containerthree .rightone .blogimage {
+    max-width: 76%;
+  }
+}
+@media screen and (max-width: 960px) {
+  .containerfour {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 960px;
+    padding: 10px;
+  }
+  .containerfour .leftone {
+    width: 60%;
+  }
+  .containerfour .rightone .blogimage {
+    max-width: 76%;
+  }
+}
+@media screen and (max-width: 960px) {
+  .browsecontainergroupfour {
+    padding-top: 100px;
+    height: 1000px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.browsecontainergroupfive {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-left: 60px;
+  width: 93%;
+  padding-top: 50px;
+  padding-left: 15%;
+  height: 400px;
+}
+.browsecontainergroupfive .containerthree {
+  width: 50%;
+  max-width: 960px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.browsecontainergroupfive .containerthree .leftone .shoespics {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  background-image: url(../images/graytennisshoes.jpg);
+}
+.browsecontainergroupfive .rightone {
+  width: 150px;
+  height: 200px;
+}
+.browsecontainergroupfive .rightone .titleofpara {
+  padding-left: 10px;
+  font-size: 30px;
+  width: 5%;
+  font-family: Cabin-Regular;
+  color: darkcyan;
+}
+.browsecontainergroupfive .rightone .paragraphinfo {
+  padding-left: 10px;
+  font-size: 22px;
+  width: 15%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: darkcyan;
+}
+
+.containerfour {
+  width: 50%;
+  max-width: 960px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.containerfour .leftone .shoespicsfive {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  background-image: url(../images/redandblackshoe.jpg);
+}
+.containerfour .rightone .titleofpara {
+  padding-left: 10px;
+  font-size: 30px;
+  width: 5%;
+  font-family: Cabin-Regular;
+  color: darkcyan;
+}
+.containerfour .rightone .paragraphinfo {
+  padding-left: 10px;
+  font-size: 22px;
+  width: 15%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: darkcyan;
+}
+
+@media screen and (max-width: 960px) {
+  .containerthree {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 960px;
+    padding: 10px;
+  }
+  .containerthree .leftone {
+    width: 8%;
+  }
+  .containerthree .rightone .blogimage {
+    max-width: 76%;
+  }
+}
+@media screen and (max-width: 960px) {
+  .containerfour {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 960px;
+    padding: 10px;
+  }
+  .containerfour .leftone {
+    width: 60%;
+  }
+  .containerfour .rightone .blogimage {
+    max-width: 76%;
+  }
+}
+@media screen and (max-width: 960px) {
+  .browsecontainergroupfive {
+    padding-top: 100px;
+    height: 1000px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.backgroundcolorgallery {
+  background-color: bisque;
+  width: 100%;
+  height: 1700px;
+}
+
+@media screen and (max-width: 960px) {
+  .backgroundcolorgallery {
+    height: 5000px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }

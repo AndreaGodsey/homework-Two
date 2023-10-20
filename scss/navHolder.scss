@@ -1,6 +1,7 @@
 .navHolder{
     position: fixed;
     left: 10px;
+    z-index: 10;
     .bars{
         .bar{
             display: block;
@@ -56,6 +57,31 @@
             transition: all 0.3s ease-in-out;
     }
 
+    .logo{
+        font-size: 25px;
+        color: bisque;
+        background-color: darkcyan;
+        margin-left: -10px;
+        font-family: Cabin-Italic;
+        border: 2px solid bisque;
+        width: 150px;
+        height: 43px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .desk{
+        display: flex;
+        font-size: 25px;
+    }
+
+    .mobile{
+        display: none;
+        
+    }
+
+
     .links{
         display: flex;
         background-color:darkcyan ;
@@ -100,5 +126,34 @@
                 color: bisque;
             }
         }
+    }
+ }
+
+ @media screen and (max-width: 960px) {
+    .navHolder{
+        .bars{
+            display: block;
+        }
+
+        .links{
+            height: 0;
+            opacity: 0;
+            flex-direction: column;
+            .linkname{
+                text-decoration: none;
+                color: bisque;
+            }
+        }
+    }
+ }
+ @media screen and (max-width: 960px) {
+    .desk{
+       display: none !important;
+      
+    }
+
+    .mobile{
+        display: flex !important;
+        
     }
  }

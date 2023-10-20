@@ -2,6 +2,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        z-index: 1;
         
         .shoeone{
             background-image: url(../images/shoeone.jpg);
@@ -146,9 +147,36 @@
     }
     }
     
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 960px) {
         .containershoesimages {
             flex-direction: column;
             padding: 12px;
+
+
+            .shoeone{
+                height: 600px;
+            }
+
+            .shoetwo{
+                height: 600px;
+            }
+
+            .shoethree{
+                height: 600px;
+            }
+
+
+            .shoeone:hover > .overlay{
+                display: block;
+                height: 600px;
+            }
+            .shoetwo:hover >.overlay{
+                display: block;
+                height: 600px;
+            }
+            .shoethree:hover > .overlay{
+                display: block;
+                height: 600px;
+            }
         }
       }

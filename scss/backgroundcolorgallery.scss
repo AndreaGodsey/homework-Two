@@ -1,0 +1,12 @@
+.backgroundcolorgallery{
+    background-color: bisque;
+    width: 100%;
+    height: 1700px;
+}
+
+@media screen and (max-width: 960px) {
+    .backgroundcolorgallery {
+        height: 5000px;
+        flex-direction: column;
+    }
+  }

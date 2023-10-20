@@ -1,0 +1,121 @@
+.browsecontainergrouptwo{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 93%;
+    margin-left: 60px;
+    padding-top: 50px;
+    padding-left: 15%;
+    height: 320px;
+
+        .containerthree{
+            width: 50%;
+            max-width: 960px;
+            display: flex;
+            .leftone{
+                .shoespics{
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 200px;
+                height: 200px;
+                background-image: url(../images/browntallboots.jpg);
+                }
+             }
+            }
+        
+            .rightone{
+                width: 150px;
+                height: 200px;
+               .titleofpara{
+                padding-left: 10px;
+                font-size: 30px;
+                width: 5%;
+                font-family: Cabin-Regular;
+                color: darkcyan;
+               }
+               .paragraphinfo{
+                padding-left: 10px;
+                font-size: 22px;
+                width: 15%;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                color: darkcyan;
+               }
+            }
+        }
+
+        .containerfour{
+            width: 50%;
+            max-width: 960px;
+            display: flex;
+            .leftone{
+                .shoespicstwo{
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 200px;
+                height: 200px;
+                background-image: url(../images/brownslipons.jpg);
+                }
+            }
+        
+            .rightone{
+                .titleofpara{
+                    padding-left: 10px;
+                    font-size: 30px;
+                    width: 5%;
+                    font-family: Cabin-Regular;
+                    color: darkcyan;
+                   }
+                   .paragraphinfo{
+                    padding-left: 10px;
+                    font-size: 22px;
+                    width: 15%;
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    color: darkcyan;
+                   }
+            }
+        }
+    
+    
+
+    @media screen and (max-width: 960px) {
+        .containerthree{
+            flex-direction: column;
+            max-width: 960px;
+            padding: 10px;
+            .leftone{
+                width: 8%;
+            }
+            .rightone{
+                .blogimage{
+                    max-width: 76%;
+                }
+            }
+        }
+      }
+
+      @media screen and (max-width: 960px) {
+        .containerfour{
+            flex-direction: column;
+            max-width: 960px;
+            padding: 10px;
+            .leftone{
+                width: 60%;
+            }
+            .rightone{
+                .blogimage{
+                    max-width: 76%;
+                }
+            }
+        }
+      }
+
+
+      @media screen and (max-width: 960px) {
+        .browsecontainergrouptwo {
+            padding-top: 100px;
+            height: 1000px;
+            flex-direction: column;
+        }
+      }
